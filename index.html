@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kine · Chat IA</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+
+  <!-- Header de marca -->
+  <header class="site-header">
+    <img src="images/LOGO_OK.svg" alt="Kine" class="site-header__logo-img" />
+    <p class="site-header__tagline">Asistente inteligente</p>
+    <div class="divider"></div>
+  </header>
+
+  <!-- Contenido principal -->
+  <main class="container">
+
+    <!-- Ventana de chat -->
+    <section class="chat-window" id="chat">
+      <div class="chat-bienvenida" id="bienvenida">
+        <div class="chat-bienvenida__icon">✦</div>
+        <p>Hola, soy <strong>Kino</strong>, el asistente de Marketing Kiné.<br>¿En qué puedo ayudarle hoy?</p>
+      </div>
+    </section>
+
+    <!-- Mensaje de error -->
+    <div id="error" role="alert"></div>
+
+    <!-- Formulario de entrada -->
+    <section class="form-card">
+      <form id="formulario">
+        <div class="form-row">
+          <textarea
+            id="prompt"
+            placeholder="Escribe tu pregunta..."
+            rows="3"
+            required
+          ></textarea>
+          <div class="form-btns">
+            <button type="submit" id="btn-enviar" class="btn-send">
+              <span>Enviar</span>
+              <div class="loader" id="loader"></div>
+            </button>
+            <button type="button" id="btn-limpiar" class="btn-limpiar" title="Nueva conversación">↺</button>
+          </div>
+        </div>
+      </form>
+      <p class="form-hint">Ctrl + Enter para enviar</p>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    Powered by Mistral AI · Kine &copy; 2026
+  </footer>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>
