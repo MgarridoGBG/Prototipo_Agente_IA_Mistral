@@ -119,7 +119,7 @@ form.addEventListener('submit', async (e) => {
       }
     }
 
-    // Guardar respuesta completa en el historial
+    // Guardar respuesta completa en el historial de conversación
     if (respuestaCompleta) {
       historial.push({ role: 'assistant', content: respuestaCompleta });
     }
